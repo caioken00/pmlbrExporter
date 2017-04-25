@@ -6,12 +6,12 @@ const app = express();
 
 // TODO: Enter the path to your service account json file
 // Need help with this step go here: https://firebase.google.com/docs/admin/setup
-const serviceAccount = require("./pmlexporter-firebase-adminsdk-ipkhy-dfcffc34e5.json");
+const serviceAccount = require("./pmlbr-d60a1-firebase-adminsdk-jq1y3-f2c532939c");
 
 // TODO: Enter your database url from firebase
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://pmlexporter.firebaseio.com"
+  databaseURL: "https://pmlbr-d60a1.firebaseio.com"
 });
 
 // Setup
